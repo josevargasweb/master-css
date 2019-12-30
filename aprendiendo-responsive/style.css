@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float:none;
+    clear:both;
+}
+
+#container{
+    width: 70%;
+    background: red;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header{
+    widows: 100%;
+    height: 150px;
+    background: lightblue;
+    color:#333;
+    line-height: 150px;
+    text-align: center;
+}
+
+aside{
+    width: 25%;
+    background: #ccc;
+    float: left;
+    min-height: 700px;
+    text-align: center;
+    line-height: 700px;
+}
+
+#article{
+    width: 75%;
+    min-height: 700px;
+    float: left;
+    background-color: lemonchiffon;
+}
+
+#article article{
+    width: 25%;
+    height: 150px;
+    background: green;
+    color:white;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid white;
+    float:left;
+    margin: 15px;
+}
+
+
+/* RESPONSIVE */
+
+/* Desde la anchura 0px hasta la anchura 880px de pantalla */
+ @media(max-width:880px){
+      /* Se ejecutaran estos estilos */
+
+    #conteiner{
+        overflow: hidden;
+    }
+
+     aside{
+         float:none;
+         min-height: auto;
+         line-height: 20px;
+         width: 91%;
+         padding: 20px;
+     }
+
+     #article{
+        width: 100%; 
+     }
+       
+      #article article{
+          width: 40%;
+          background: red;
+      }
+ }
+
+ @media(max-width:632px){
+    #article article{
+        width: 90%;
+        background: blue;
+    }
+}
+
+@media(max-width:554px){
+   body{
+       background: lightsalmon;
+   }
+}
